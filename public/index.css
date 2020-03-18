@@ -1,0 +1,61 @@
+*{
+     font-family: 'Oxanium', cursive;
+     color: white;
+}
+body{
+     background-image: linear-gradient(rgb(0, 0, 0),rgb(24, 24, 24), rgb(37, 37, 37), rgb(138, 138, 138));
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+}
+h1{
+     font-size: 2.5em;
+     text-align: center;
+}
+progress{
+     margin: 3vh 0 3vh 0;
+     width: 92%;
+     height: 7vh;
+     background-color: rgb(77, 3, 3); 
+     color: rgb(40, 111, 218);
+     border-radius: 10px;    
+     border-style: solid;
+     border-color: rgb(23, 4, 70);
+     border-width: 5px;
+}
+/*Chrome configuration*/
+progress::-webkit-progress-value { background-color: rgb(31, 105, 218); }
+progress::-webkit-progress-bar {background-color: rgb(77, 3, 3);}
+
+#progress_text{
+     margin: 3vh 0 0 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     width: 15vmax;
+     height: 15vmax;
+     border-radius: 50%;
+     background-color: rgb(30, 80, 219);
+     font-size: 2em;
+     border-style: solid;
+     border-width: 10px;
+     border-color: rgb(15, 17, 107);
+}
+@media (max-width: 800px) {
+     progress{
+          width: 98%;
+          margin-top: 8vh;
+     }  
+     h1{
+          font-size: 2.1em;
+     }
+     #progress_text{
+          border-width: 8px;
+          width: 19vmax;
+          height: 19vmax;
+          font-size: 1.5em;
+     }
+}

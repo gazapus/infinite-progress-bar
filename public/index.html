@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+     <link href="index.css" rel="stylesheet" />
+     <link rel="icon" href="./espiral-icono.png" />
+     <meta name="description" content="An infinite progress bar online, ever load but never finish">
+
+     <title>Infinite Progress Bar</title>
+</head>
+
+<body>
+     <h1>Infinite Progress Bar</h1>
+     <progress value="0" max="100" id="progress">0 %</progress>
+     <div id="progress_text">0%</div>
+     <script src="index.js"></script>
+
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+     <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+               apiKey: "AIzaSyBMhPhy3yFmRy-2UkIcuQu6YCey-nz32fI",
+               authDomain: "infinite-progress-bar.firebaseapp.com",
+               databaseURL: "https://infinite-progress-bar.firebaseio.com",
+               projectId: "infinite-progress-bar",
+               storageBucket: "infinite-progress-bar.appspot.com",
+               messagingSenderId: "419751123155",
+               appId: "1:419751123155:web:8d7c80437b35934a0edc26"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+     </script>
+</body>
+
+</html>
